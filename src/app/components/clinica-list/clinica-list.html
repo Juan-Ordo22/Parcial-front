@@ -1,0 +1,9 @@
+<h2>Listado de Clínicas</h2>
+
+<p>{{ clinicas | json }}</p>
+
+<ul>
+  <li *ngFor="let c of clinicas">
+    {{ c.id }} - {{ c.nombre }} - {{ c.direccion }} - {{ c.telefono }}
+  </li>
+</ul>
